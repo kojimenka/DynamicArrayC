@@ -8,8 +8,18 @@
 
 #include <iostream>
 
+//#include "FirstPart.h"
+//#include "SecondPart.h"
+
+#include "TaskWithMalloc.h"
+#include "TaskWithPointer.h"
+
+using namespace std;
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    //dynamicArrayWithPointer();
+    //partTwoWithPointer();
+    //dynamicArrayWithMalloc();
+    partTwoMalloc();
     return 0;
 }

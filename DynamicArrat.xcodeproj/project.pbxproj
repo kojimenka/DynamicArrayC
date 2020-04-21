@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		2C71A5E0243B10D900BC9EF6 /* DynamicArrat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicArrat; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C71A5E3243B10D900BC9EF6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2CE172EB244F0DE0002DD3DA /* TaskWithMalloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWithMalloc.h; sourceTree = "<group>"; };
+		2CE172EC244F0E55002DD3DA /* TaskWithPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWithPointer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				2C71A5E3243B10D900BC9EF6 /* main.cpp */,
+				2CE172EB244F0DE0002DD3DA /* TaskWithMalloc.h */,
+				2CE172EC244F0E55002DD3DA /* TaskWithPointer.h */,
 			);
 			path = DynamicArrat;
 			sourceTree = "<group>";
