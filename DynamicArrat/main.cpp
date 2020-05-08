@@ -18,8 +18,8 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     //dynamicArrayWithPointer();
-    //partTwoWithPointer();
+    partTwoWithPointer();
     //dynamicArrayWithMalloc();
-    partTwoMalloc();
+    //partTwoMalloc();
     return 0;
 }

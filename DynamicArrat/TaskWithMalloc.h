@@ -67,7 +67,7 @@ void partTwoMalloc () {
     int countOfNumbers[9];
     int newElement;
     int column = 9;
-    int count  = 1;
+    int count  = 0;
     char choise;
     bool sameNumber = false;
     
@@ -92,9 +92,10 @@ void partTwoMalloc () {
         }
         
         if (!sameNumber) {
-            matrix = (int*)realloc(matrix, count * sizeof(int*));
+            matrix = (int*)realloc(matrix, count * sizeof(int));
             matrix[lastNumber * column + countOfNumbers[lastNumber]] = newElement;
             countOfNumbers[lastNumber] += 1;
+            count += 1;
         }
         
         sameNumber = false;
@@ -112,7 +113,6 @@ void partTwoMalloc () {
     }
     
     cout << endl;
-    
     
     free(matrix);
 }

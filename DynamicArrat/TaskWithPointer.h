@@ -32,7 +32,7 @@ void dynamicArrayWithPointer () {
     for (int i = 0; i < rows; i++) {
         arrayOfPointer[i] = (int*)malloc(columns * sizeof(int));
     }
-
+    
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
             printf("a[%d][%d] = ", i, j);
@@ -50,7 +50,7 @@ void dynamicArrayWithPointer () {
         min = INT_MAX;
         max = INT_MIN;
     }
-
+    
     for (int i = 0; i < rows; i++) {
         for(int j = 0; j < columns; j++) {
             cout << arrayOfPointer[i][j] << "  ";
@@ -58,7 +58,7 @@ void dynamicArrayWithPointer () {
         cout << "Сумма минимум и максимума = " << sumOfMinAndMax[i];
         cout << endl;
     }
-
+    
     for (int i = 0; i < rows; i++) {
         free(arrayOfPointer[i]);
     }
@@ -92,7 +92,7 @@ void partTwoWithPointer () {
                 sameNumber = true;
             }
         }
-
+        
         if (sameNumber == false) {
             matrix[lastNumber] = (int*)realloc(matrix[lastNumber], (countOfNumbers[lastNumber]) * sizeof(int));
             matrix[lastNumber][countOfNumbers[lastNumber]] = newElement;
